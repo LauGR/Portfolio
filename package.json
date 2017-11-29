@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio fait en html/css,bootstrap,jQuery",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauGR/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauGR/Portfolio/issues"
+  },
+  "homepage": "https://github.com/LauGR/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "boostrap": "^2.0.0",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.0",
+    "nodemon": "^1.12.1"
+  }
+}
