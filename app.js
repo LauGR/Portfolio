@@ -23,9 +23,4 @@ app.use(express.static(__dirname + '/public'));  // find all ressource front
 routes(app)
 
 
-
-app.listen(8080)
-
-
-
 module.exports = app;
