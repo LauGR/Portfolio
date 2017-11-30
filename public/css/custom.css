@@ -520,7 +520,9 @@ h2 span {
 @media only screen and ( max-width: 767px) {
     body {
         margin-left:20px;
-
+     }
+     #home {
+         background: #303030;
      }
      .templatemo-nav {
         position: fixed;
@@ -547,6 +549,7 @@ h2 span {
         line-height: 35px;
     }
     h1 {
+        padding-right: 20px;
         font-size: 30px;
     }
     h2 {
