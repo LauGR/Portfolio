@@ -20,6 +20,7 @@ a:hover {
     color: #0FF;
 }
 
+
 /* start preloader */
 
 .preloader {
@@ -113,23 +114,45 @@ a:hover {
 /* end preloader */
 
 
+/* start social icon */
 
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
 
+.social-icon h4 {
+    display: inline-block;
+    padding-right: 20px;
+}
 
-/* start home exp cursus portfolio contact */
-#home,
-#exp,
-#cursus,
-#portfolio,
-#contact {
-    padding-top: 170px;
-    padding-bottom: 130px;
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin-right: 10px;
+}
+
+.social-icon li a:hover {
+    background: #28a7e9;
+    border-color: transparent;
 }
 
 
-/* end home exp cursus portfolio contact */
-
-
+/* end social icon */
 
 
 /* start header */
@@ -214,13 +237,14 @@ header .social-icon li a {
 
 /* end navigation */
 
+
 /* start h2 */
 
 h2 {
     text-align: center;
     font-size: 40px;
     padding-bottom: 40px;
-
+    text-transform: uppercase;
 }
 
 h2 span {
@@ -228,13 +252,16 @@ h2 span {
     font-weight: bold;
 }
 
+
 /* end h2 */
 
+
 /* start home */
+
 #home {
     background: url('../images/bg-piano.jpg') no-repeat;
     height: 850px;
-    padding-top : 200px;
+    padding-top: 200px;
 }
 
 #home h1 {
@@ -278,6 +305,11 @@ h2 span {
 
 /* start exp */
 
+#exp {
+    padding-top: 170px;
+    padding-bottom: 130px;
+}
+
 #exp .media-heading-wrapper {
     padding-bottom: 32px;
 }
@@ -306,11 +338,24 @@ h2 span {
 /* end exp */
 
 
-/* start Connaissances */
-#connaissances {
-    text-align: center;
+/* start cursus */
+
+#cursus {
+    padding-top: 170px;
+    padding-bottom: 130px;
 }
 
+
+/* end cursus */
+
+
+/* start Connaissances */
+
+#connaissances {
+    padding-top: 170px;
+    padding-bottom: 130px;
+    text-align: center;
+}
 
 .icons {
     margin-top: 40px;
@@ -319,25 +364,29 @@ h2 span {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-  
-    
 }
+
 .languages {
-  padding: 17px 0px 0px 20px ; 
+    padding: 17px 0px 0px 20px;
 }
+
 .computer {
-    padding: 17px 0px 0px 16px ; 
-  }
-  .music {
-    padding: 15px 0px 0px 21px ; 
-  }
+    padding: 17px 0px 0px 16px;
+}
+
+.music {
+    padding: 15px 0px 0px 21px;
+}
+
 
 /* end  Connaissances */
+
 
 /* start Portfolio */
 
 #portfolio {
-    padding-bottom: 80px;
+    margin-top: 170px;
+    padding-bottom: 130px;
 }
 
 #portfolio .col-md-3 {
@@ -348,7 +397,6 @@ h2 span {
 .portfolio-overlay {
     max-width: 450px;
 }
-
 
 #portfolio .portfolio-thumb {
     overflow: hidden;
@@ -399,6 +447,7 @@ h2 span {
 
 #contact {
     background: #202020;
+    padding-top: 120px;
 }
 
 #contact .form-control {
@@ -457,84 +506,26 @@ h2 span {
     margin-bottom: 10px;
 }
 
-.btn_final{
-    margin-left: 380px
+.btn_final {
+    margin-left: 80px
 }
+
 
 /* end Contact */
-
-/* start social icon */
-
-.social-icon {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-.social-icon h4 {
-    display: inline-block;
-    padding-right: 20px;
-}
-
-.social-icon li {
-    display: inline-block;
-    list-style: none;
-}
-
-.social-icon li a {
-    border: 1px solid #fff;
-    border-radius: 2px;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    text-decoration: none;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    margin-right: 10px;
-}
-
-.social-icon li a:hover {
-    background: #28a7e9;
-    border-color: transparent;
-}
-
-
-/* end social icon */
-
-
-
 
 
 /* start smartphone */
 
-@media only screen and ( max-width: 360px) {
-    header .social-icon {
-        text-align: left;
-    }
-    #home {
-        min-height: 200px;
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    #home h1 {
-        font-size: 32px;
-    }
-}
 
 @media only screen and ( max-width: 767px) {
-    #home {
-        min-height: 300px;
-        padding-top: 80px;
-        padding-bottom: 60px;
-    }
-    #home h1 {
-        font-size: 52px;
-    }
-    .templatemo-nav {
+    body {
+        margin-left:20px;
+
+     }
+     .templatemo-nav {
         position: fixed;
         top: 0;
+        right: 0;
     }
     header {
         margin-top: 70px;
@@ -555,10 +546,17 @@ h2 span {
         padding-bottom: 5px;
         line-height: 35px;
     }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 35px;
+    }
 }
 
 
 /* end smartphone */
+
 
 /* start tablette */
 
