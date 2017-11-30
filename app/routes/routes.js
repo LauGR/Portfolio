@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-
+const dotenv = require('dotenv').load();
 module.exports =  (app) =>{
 app.get('/',(req,res)=>{
     res.render('index')
