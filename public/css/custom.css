@@ -20,41 +20,6 @@ a:hover {
     color: #0FF;
 }
 
-
-/* start h2 */
-
-h2 {
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 40px;
-
-}
-
-h2 span {
-    color: #28a7e9;
-    font-weight: bold;
-}
-
-
-
-/* end h2 */
-
-
-/* start home exp cursus service portfolio contact */
-#home,
-#exp,
-#cursus,
-#service,
-#portfolio,
-#contact {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-
-/* end home exp team service portfolio contact */
-
-
 /* start preloader */
 
 .preloader {
@@ -148,6 +113,25 @@ h2 span {
 /* end preloader */
 
 
+
+
+
+/* start home exp cursus portfolio contact */
+#home,
+#exp,
+#cursus,
+#portfolio,
+#contact {
+    padding-top: 170px;
+    padding-bottom: 130px;
+}
+
+
+/* end home exp cursus portfolio contact */
+
+
+
+
 /* start header */
 
 header {
@@ -230,12 +214,27 @@ header .social-icon li a {
 
 /* end navigation */
 
+/* start h2 */
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+
+}
+
+h2 span {
+    color: #28a7e9;
+    font-weight: bold;
+}
+
+/* end h2 */
 
 /* start home */
 #home {
     background: url('../images/bg-piano.jpg') no-repeat;
-    height: 750px;
-    padding-top : 2 00px;
+    height: 850px;
+    padding-top : 200px;
 }
 
 #home h1 {
@@ -307,94 +306,7 @@ header .social-icon li a {
 /* end exp */
 
 
-/* start team */
-
-#team .team-wrapper {
-    background: #404040;
-    padding-bottom: 10px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    position: relative;
-}
-
-#team .team-wrapper:hover {
-    cursor: pointer;
-    opacity: 0.4;
-    bottom: 4px;
-}
-
-#team .team-wrapper .team-des {
-    padding: 20px;
-}
-
-#team .team-wrapper .team-des span {
-    color: #28a7e9;
-    display: block;
-    font-weight: bold;
-    padding-bottom: 12px;
-}
-
-
-/* end team */
-
-
-/* start service */
-
-#service .col-md-4 {
-    padding: 40px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-#service .col-md-4:hover {
-    background: #505050;
-}
-
-#service .active {
-    background: #505050;
-    padding: 40px;
-}
-
-#service .fa {
-    border: 1px solid #fff;
-    border-radius: 2px;
-    color: #fff;
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-}
-
-#service h4 {
-    color: #28a7e9;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 14px;
-}
-
-
-/* end service */
-
-
-/* start portfolio */
-
-#portfolio {
-    padding-bottom: 80px;
-}
-
-#portfolio .col-md-3 {
-    padding: 0px;
-}
-
-.portfolio-thumb,
-.portfolio-overlay {
-    max-width: 450px;
-}
-
-
-
-/* Connaissances*/
+/* start Connaissances */
 #connaissances {
     text-align: center;
 }
@@ -420,12 +332,24 @@ header .social-icon li a {
     padding: 15px 0px 0px 21px ; 
   }
 
+/* end  Connaissances */
 
-/* Contact */
+/* start Portfolio */
 
-.btn_final{
-margin-left: 380px
+#portfolio {
+    padding-bottom: 80px;
 }
+
+#portfolio .col-md-3 {
+    padding: 0px;
+}
+
+.portfolio-thumb,
+.portfolio-overlay {
+    max-width: 450px;
+}
+
+
 #portfolio .portfolio-thumb {
     overflow: hidden;
     padding: 0;
@@ -468,10 +392,10 @@ margin-left: 380px
 }
 
 
-/* end portfolio */
+/* end Portfolio */
 
 
-/* start contact */
+/* start Contact */
 
 #contact {
     background: #202020;
@@ -533,23 +457,11 @@ margin-left: 380px
     margin-bottom: 10px;
 }
 
-
-/* end contact */
-
-
-/* start copyright */
-
-#copyright {
-    padding: 20px;
+.btn_final{
+    margin-left: 380px
 }
 
-#copyright p {
-    font-weight: 400;
-}
-
-
-/* end copyright */
-
+/* end Contact */
 
 /* start social icon */
 
@@ -591,40 +503,25 @@ margin-left: 380px
 
 /* end social icon */
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-    #portfolio .portfolio-thumb .portfolio-overlay {
-        padding: 0px 8px;
+
+
+
+
+/* start smartphone */
+
+@media only screen and ( max-width: 360px) {
+    header .social-icon {
+        text-align: left;
+    }
+    #home {
+        min-height: 200px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    #home h1 {
+        font-size: 32px;
     }
 }
-
-
-/* start 980 media quires */
-
-@media only screen and ( max-width: 980px) {
-    #team .team-wrapper {
-        margin-top: 40px;
-    }
-    #portfolio .portfolio-thumb .portfolio-overlay {
-        background: #28a7e9;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        position: absolute;
-        padding: 40px 10px 20px 20px;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-    }
-}
-
-
-/* end 360 media quires */
-
-
-/* start 768 media quires */
 
 @media only screen and ( max-width: 767px) {
     #home {
@@ -661,26 +558,35 @@ margin-left: 380px
 }
 
 
-/* end 768 media quires */
+/* end smartphone */
 
+/* start tablette */
 
-/* start 360 media quires */
-
-@media only screen and ( max-width: 360px) {
-    header .social-icon {
-        text-align: left;
+@media only screen and ( max-width: 980px) {
+    #team .team-wrapper {
+        margin-top: 40px;
     }
-    #home {
-        min-height: 200px;
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    #home h1 {
-        font-size: 32px;
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        background: #28a7e9;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        padding: 40px 10px 20px 20px;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 }
 
 
-/* end 360 media quires */
+/* end tablette */
 
-
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        padding: 0px 8px;
+    }
+}
