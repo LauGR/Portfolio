@@ -4,9 +4,12 @@ module.exports = (app) => {
     app.get('/', (req, res) => {
         res.render('index')
     })
-app.get('/validationemail'),(req,res) => {
-    res.render('validationEmail')
-}
+    app.get('/validationemail', (req, res) => {
+        res.render('validationEmail')
+    })
+    app.get('/nonvalidationemail', (req, res) => {
+        res.render('nonvalidationEmail')
+    })
 
 
     app.post('/email', (req, res) => {
@@ -28,7 +31,7 @@ app.get('/validationemail'),(req,res) => {
 
         transporter.sendMail(mail, (error, response) => {
             if (error) {
-                console.log("Mail non envoyé"); 
+                console.log("Mail non envoyé");
                 res.redirect('/nonvalidationemail')
             } else {
                 console.log("Mail envoyé avec succès!")
