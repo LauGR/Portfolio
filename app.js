@@ -17,8 +17,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css/')); // expression static for bootstrap ( in node_modules)
 app.use(express.static(__dirname + '/public')); // find all ressource front
-app.use('/css', express.static(__dirname + '/node_modules/izitoast/dist/css/')); // load css izitoast
-app.use('/js', express.static(__dirname + '/node_modules/izitoast/dist/js/')); // load js izitoast
 
 
 
