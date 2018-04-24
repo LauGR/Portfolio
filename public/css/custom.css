@@ -515,6 +515,22 @@ h2 span {
 /* end Contact */
 
 
+/* start validationEmail */
+.validationemail {
+    margin-top: 300px;
+    font-size: 23px;
+}
+/* end validationEmail */
+
+/* start nonvalidationEmail */
+.nonvalidationemail {
+    margin-top: 300px;
+    font-size: 23px;
+}
+/* end nonvalidationEmail */
+
+
+
 /* start smartphone */
 
 
