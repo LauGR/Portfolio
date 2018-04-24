@@ -32,7 +32,7 @@ module.exports = (app) => {
         transporter.sendMail(mail, (error, response) => {
             if (response) {
                 console.log("Mail envoyé");
-                res.redirect('/validationemail')
+                res.redirect('validationemail')
             } else {
                 console.log("Mail non envoyé ")
                 res.redirect('/nonvalidationemail')
