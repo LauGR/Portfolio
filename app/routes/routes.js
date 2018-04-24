@@ -31,11 +31,11 @@ module.exports = (app) => {
 
         transporter.sendMail(mail, (error, response) => {
             if (error) {
-                console.log("Mail non envoyé");
-                res.redirect('/nonvalidationemail')
-            } else {
-                console.log("Mail envoyé avec succès!")
+                console.log("Mail envoyé");
                 res.redirect('/validationemail')
+            } else {
+                console.log("Mail non envoyé ")
+                res.redirect('/nonvalidationemail')
             }
             transporter.close();
         });
