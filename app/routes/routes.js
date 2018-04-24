@@ -30,7 +30,7 @@ module.exports = (app) => {
         }
 
         transporter.sendMail(mail, (error, response) => {
-            if (error) {
+            if (response) {
                 console.log("Mail envoyé");
                 res.redirect('/validationemail')
             } else {
