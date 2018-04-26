@@ -7,10 +7,7 @@ module.exports = (app) => {
     app.get('/validationemail', (req, res) => {
         res.render('validationEmail')
     })
-    app.get('/nonvalidationemail', (req, res) => {
-        res.render('nonvalidationEmail')
-    })
-
+   
 
     app.post('/email', (req, res) => {
         let transporter = nodemailer.createTransport({
@@ -32,7 +29,7 @@ module.exports = (app) => {
         transporter.sendMail(mail, (error, response) => {
             if (error) {
                 console.log("Mail non envoyé");
-                res.redirect('/nonvalidationemail')
+                res.redirect('/')
             } else {
                 console.log("Mail envoyé ")
                 res.redirect('/validationemail')
